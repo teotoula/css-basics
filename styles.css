@@ -1,0 +1,105 @@
+/*Ovo su stilovi za <body> element i sve unutar njega*/
+
+
+body {
+    color: red;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    height: 2000px;
+
+
+}
+
+h1 {
+    height: 200px;
+    width: 250px;
+    padding: 30px;
+    margin: 0px 0px 0px 20%;
+    border: 10px solid orange;
+    font-size: 2em;
+    background-color: green;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease
+}
+
+h1:hover {
+    background-color: pink;
+    color: black;
+    border-color: blueviolet;
+    height: 300px;
+
+
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* bottom: 0; */
+
+    /* right: -1px; */
+    /* width: 200px; */
+    /* height: 100px; */
+    background-color: pink;
+    display: block;
+    text-align: center;
+
+}
+
+/*right: 50%;
+bottom: 50%;
+transform: translate(50%, 50%);*/
+
+
+.box {
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    position: relative;
+    /* left: -15px;*/
+}
+
+
+
+p::before {
+    content: "";
+    color: purple;
+    width: 79px;
+    height: 4px;
+    background-color: #ff0000;
+    display: inline-block;
+    position: absolute;
+    bottom: -12px;
+}
+
+input[type="checkbox"]:checked+label {
+    color: blue
+}
+
+input::after {
+    content: "Frano";
+}
+
+li:first-child {
+    color: brown;
+}
+
+li:last-of-type {
+    color: purple;
+}
+
+@media screen and (max-width: 360px) {
+    li {
+        color: green;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    li {
+        color: black;
+
+    }
+}
