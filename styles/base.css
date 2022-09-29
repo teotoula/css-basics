@@ -1,0 +1,15 @@
+/*Ovo su stilovi za <body> element i sve unutar njega*/
+
+body {
+  color: red;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  height: 2000px;
+}
+
+input,
+textarea,
+button {
+  font-family: "Montserrat", sans-serif;
+}
