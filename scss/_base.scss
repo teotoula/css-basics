@@ -1,0 +1,27 @@
+:root {
+    --base-color: blue; 
+     
+    font-size: $base-font-size;
+}
+
+$base-color: var(--base-color);
+
+
+
+
+body {
+    color: $base-color;
+    @include font-size(32px); 
+    @include flex(row, center, center, wrap, 1 0 auto);
+    margin: 0;
+    font-family:$font-family;
+    font-size: 40px;
+    height: 2000px;
+};
+
+input,
+textarea,
+button {
+    font-family:$font-family;
+  
+};

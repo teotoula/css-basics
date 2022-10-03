@@ -1,0 +1,44 @@
+// Variables
+$primary-color: red;
+$base-font-size: 10px;
+$font-family:"Montserrat", sans-serif;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+//functions
+@function calc-rem($pixel-size) {
+    $result:$pixel-size / $base-font-size;
+    @return #{$result}rem;
+}
+
+//mixins
+
+@mixin font-size($size) {
+    font-size:calc-rem($size);
+}
+@mixin flex($dir, $just, $align, $wrap:false, $gsb:false) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content:$just;
+    align-items: $align;
+    flex-wrap: wrap;
+    flex: $gsb;
+    
+    @if $wrap {
+        flex-wrap:$wrap;
+    }
+
+    @if gsb {
+        flex: $gsb;
+    }
+}
+
+@mixin media($width, $type: max) {
+    @media screen and (#{$type}-width: $width) {
+       @content; 
+    }
+    
+}

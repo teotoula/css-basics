@@ -1,0 +1,6 @@
+.link {
+    background-color: orange;
+  &:nth-child(even) {
+    background-color: red;
+  }
+}

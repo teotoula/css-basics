@@ -1,0 +1,22 @@
+{
+  "name": "css-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass --watch styles.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teotoula/css-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teotoula/css-basics/issues"
+  },
+  "homepage": "https://github.com/teotoula/css-basics#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
